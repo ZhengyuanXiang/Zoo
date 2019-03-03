@@ -36,12 +36,18 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(less|css|scss)$/,
+        use: ['vue-style-loader', 'css-loader', 'less-loader','sass-loader']
       }
     ]
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': path.resolve('src'),
+      'R': path.resolve('src/components')
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
