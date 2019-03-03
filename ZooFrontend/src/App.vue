@@ -7,17 +7,20 @@
                     <section class = "section"></section>
                 </div>
             </div>
+            <foot></foot>
         </div>
     </div>
 </template>
 
 <script>
 import tab from "@/components/tab/tab"
+import foot from "@/components/base/foot"
 
 export default {
     name: 'app',
     components: {
-      tab
+      tab,
+      foot
     },
     data () {
         return {

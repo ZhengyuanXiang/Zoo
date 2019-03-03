@@ -3,7 +3,7 @@
         <nav class = "navbar">
             <div class = "nav-header">
                 <div class = "logo">
-                    <img src = "/img/logo.png" alt = "">
+                    <img src = "../../assets/logo.png" alt = "">
                 </div>
                 <button class = "navbar-toggle" @click = "navShow" :class = "{'toggle-click': show}">
                     <div class = "line"></div>
