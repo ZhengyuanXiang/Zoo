@@ -4,10 +4,25 @@
             <div class = "body-content">
                 <tab></tab>
                 <div class = "container" ref = "container">
-                    <section class = "section"></section>
+                    <section class = "section">
+                        <div class = "r-slide">
+                            <div class = "r-side-content">
+                                <about></about>
+                                <hot></hot>
+                                <gateWay></gateWay>
+                                <timeline></timeline>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
             <foot></foot>
+            <transition name = "fade">
+                <div class = "rocket" v-show = "showBackTop">
+                    <a href = "javascript: void(0)" @click = "backTop"></a>
+                </div>
+            </transition>
+            <div class = "fix-bg"></div>
         </div>
     </div>
 </template>
@@ -15,16 +30,24 @@
 <script>
 import tab from "@/components/tab/tab"
 import foot from "@/components/base/foot"
+import about from "@/components/base/about"
+import hot from "@/components/base/hot"
+import gateWay from "@/components/base/gateWay"
+import timeline from "@/components/base/timeline"
 
 export default {
     name: 'app',
     components: {
-      tab,
-      foot
+        tab,
+        foot,
+        about,
+        hot,
+        gateWay,
+        timeline
     },
     data () {
         return {
-
+            showBackTop: true
         }
     }
 }
