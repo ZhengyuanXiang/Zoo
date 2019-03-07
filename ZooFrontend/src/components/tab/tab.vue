@@ -46,7 +46,8 @@
                 scrollFlag: 0,
                 routeName: "",
                 intervalId: "",
-                tabs: [{name: "home",render: "首页",icon: "icon-home"},{name: "article",render: "文章",icon: "icon-book"},{name: "msgboard",render: "留言",icon: "icon-messages"},{name: "life",render: "生活",icon: "icon-images"}]
+                //tabs: [{name: "home",render: "首页",icon: "icon-home"},{name: "article",render: "文章",icon: "icon-book"},{name: "msgboard",render: "留言",icon: "icon-messages"},{name: "life",render: "生活",icon: "icon-images"}]
+                tabs: [{name: "home",render: "首页",icon: "icon-home"}]
             }
         },
         mounted(){

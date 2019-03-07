@@ -4,6 +4,12 @@
             <div class = "body-content">
                 <tab></tab>
                 <div class = "container" ref = "container">
+                    <div class = "content">
+                        <keep-alive v-if = "$route.meta.keepAlive" >
+                            <router-view/>
+                        </keep-alive>
+                        <router-view v-if = "!$route.meta.keepAlive"></router-view>
+                    </div>
                     <section class = "section">
                         <div class = "r-slide">
                             <div class = "r-side-content">
@@ -49,7 +55,13 @@ export default {
         return {
             showBackTop: true
         }
-    }
+    },
+    methods: {
+        backTop: function(){
+          document.documentElement.scrollTop = 0;
+          document.body.scrollTop = 0;
+        }
+    },
 }
 </script>
 

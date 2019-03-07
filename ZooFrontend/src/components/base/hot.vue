@@ -16,7 +16,7 @@
 	import { mapState,mapActions,mapMutations } from "vuex"
 	export default{
 		mounted(){
-			this.getHot()
+			//this.getHot()
 		},
 		computed: {
 			...mapState(["articles"])
