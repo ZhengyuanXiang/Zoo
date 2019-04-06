@@ -1,6 +1,6 @@
-# zoofrontend
+# frontend
 
-> zoo frontend
+> A Vue.js project
 
 ## Build Setup
 
