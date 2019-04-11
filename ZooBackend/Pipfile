@@ -9,6 +9,8 @@ verify_ssl = true
 django = "*"
 flake8 = "*"
 django-extensions = "*"
+django-environ = "*"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.6"

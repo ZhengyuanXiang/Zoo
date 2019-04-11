@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .serializers import BlogS
+from .models import Blog
+
+
+class BlogVS(viewsets.ModelViewSet):
+    queryset = Blog.objects.order_by('-id')
+    serializer_class = BlogS
